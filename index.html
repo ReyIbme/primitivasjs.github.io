@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/funciones.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css" type="text/css">
+    <title>Cuestionario</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a class="opcionMenuPrincipal" href="../html/index.html">Javascript</a>
+
+        </h1>
+
+    </header>
+    <h1>Cuestionario</h1>
+    <article id="datos" class="Contenedor">
+
+        <fieldset>
+            <label for="">Qué grupo de Kpop te gusta más?</label>
+            <select name="grupo" id="grupo">
+                    <option name="p1" value="select">Seleccionar...</option>
+                    <option name="p1" value="suju" select>Super Junior</option>
+                    <option name="p1" value="tvxq">TVXQ</option>
+                    <option name="p1" value="bigbang">Big Bang</option>
+                    <option name="p1" value="got7">Got7 </option>
+                </select>
+            <br>
+            <br>
+            <label for="">Qué Idol masculino de la cuarta generación es tu fav?</label>
+            <select name="idol" id="fav">
+                <option name="p2" value="select">Selecionar...</option>
+                <option name="p2" value="bangchan">Bangchan - Sks</option>
+                <option name="p2" value="jun">Jun Ji - OnlyOneOf</option>
+                <option name="p2" value="soobin">Soo Bin - TXT</option>
+                <option name="p2" value="yoohan">Yoo Han - WEi</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Que idol femenina de la cuarta generación es tu fav?</label>
+            <select name="femidol" id="fem">
+                <option name="p3" value="select">Selecionar...</option>
+                <option name="p3" value="yeon">So Yeon - (G) I-Dle</option>
+                <option name="p3" value="yeon">Chae Yeon - IZ*ONE</option>
+                <option name="p3" value="yiren">Yi Ren - EVERGLOW</option>
+                <option name="p3" value="karina">Karina - aespa</option>
+            </select>
+            <br>
+            <br>
+            <label>Cuál es tu empresa Kpop favorita?</label>
+            <select name="empresa" id="empresa">
+                <option name="p4" value="select">Selecionar...</option>
+                <option name="p4" value="sm">SM Entertainment - Lee Sooman</option>
+                <option name="p4" value="jyp">JYP Entertainment - J. Y. Park</option>
+                <option name="p4" value="bighit">Bighit Entertainment - Bang Si-Hyuk</option>
+                <option name="p4" value="yg">YG Entertainment - Yang Hyun-suk</option>
+            </select>
+            <br>
+            <br>
+            <label>Qué país asiatico realiza mejores dramas?</label>
+            <select name="drama" id="drama">
+                <option name="p5" value="select">Seleccionar...</option>
+                <option name="p5" value="china">China</option>
+                <option name="p5" value="surcorea">Sur Corea</option>
+                <option name="p5" value="tailandia">Tailandia</option>
+                <option name="p5" value="japon">Japón</option>
+            </select>
+            <br>
+            <br>
+            <label>Quién es tu actor de drama favorito?</label>
+            <select name="actor" id="actor">
+                <option name="p6" value="select">Selecionar...</option>
+                <option name="p6" value="chino">Darren chen (chino-taiwanes)</option>
+                <option name="p6" value="coreano">Park Seo Joon (Coreano)</option>
+                <option name="p6" value="tailandes">Lee Thanat (Tailandés)</option>
+                <option name="p6" value="japones">Kento Yamazaki (Japones)</option>
+            </select>
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <fieldset>
+                <legend>Seleccion de archivo</legend>
+                <p>
+                    <input type="file" name="txtArchivo" id="txtArchivo" />
+                </p>
+                <label>
+                    <input type="button" name="" id="" value="" onclick="RecuperarLosDatos();">
+                </label>
+            </fieldset>
+        </fieldset>
+        <input type="button" value="Mostrar" onclick="mostrarDatos()" />
+    </article>
+    <p id="Resultado" class="res">Resultado</p><br>
+</body>
+
+</html>
